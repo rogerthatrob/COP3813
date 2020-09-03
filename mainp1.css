@@ -1,8 +1,8 @@
 
 .myDiv{
-    border: blue;
+    border: 10px ridge blue;
     background-color: coral;
-    text-align: center;
+    text-align: left;
 }
 
 h2{
