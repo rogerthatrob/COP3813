@@ -1,8 +1,8 @@
 //max
 function myMax(){
-	a = document.getElementById("n1").value
-  b = document.getElementById("n2").value
-  c = document.getElementById("n3").value
+  a = parseInt(document.getElementById("n1").value)
+  b = parseInt(document.getElementById("n2").value)
+  c = parseInt(document.getElementById("n3").value)
   maxNum = Math.max(a,b,c)
   console.log(maxNum)
   alert("the max of three numbers is " +maxNum)
@@ -11,9 +11,9 @@ function myMax(){
 }
 // min
 function myMin(){
-	a = document.getElementById("n1").value
-  b = document.getElementById("n2").value
-  c = document.getElementById("n3").value
+  a = parseInt(document.getElementById("n1").value)
+  b = parseInt(document.getElementById("n2").value)
+  c = parseInt(document.getElementById("n3").value)
   minNum = Math.min(a,b,c)
   console.log(minNum)
   alert("the min of three numbers is " +minNum)
@@ -35,13 +35,20 @@ function myMedian(){
   a = parseInt(document.getElementById("n1").value)
   b = parseInt(document.getElementById("n2").value)
   c = parseInt(document.getElementById("n3").value)
-  if(a>b && b<c){
-    alert("median is: " +b)
-  } elseif(b>a && a<c);{
-    alert("median is: " +a)
-  } elseif(a>c && c<b);{
-    alert("median is: " +c)
-  }
-  
+  // var temp = [a,b,c]
+  // medianNum = median(temp) 
+
+  // if (a==0 || b==0 || c==0){
+  //   alert("error, must be greater than zero")
+  // }else if (b>a && c<a) {
+  //   alert("median is: " +a)
+  // }else if (a>b && c<b){
+  //   alert("median is: " +b)
+  // }else if (a>c && b<c){
+  //   alert("median is: " +c)
+  // }else
+  //   alert("error")
+  // console.log(medianNum)
+  // alert("the average of three numbers is " +medianNum)
 }
 // range (max-min)
