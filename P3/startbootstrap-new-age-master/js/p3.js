@@ -35,20 +35,23 @@ function myMedian(){
   a = parseInt(document.getElementById("n1").value)
   b = parseInt(document.getElementById("n2").value)
   c = parseInt(document.getElementById("n3").value)
-  // var temp = [a,b,c]
-  // medianNum = median(temp) 
-
-  // if (a==0 || b==0 || c==0){
-  //   alert("error, must be greater than zero")
-  // }else if (b>a && c<a) {
-  //   alert("median is: " +a)
-  // }else if (a>b && c<b){
-  //   alert("median is: " +b)
-  // }else if (a>c && b<c){
-  //   alert("median is: " +c)
-  // }else
-  //   alert("error")
-  // console.log(medianNum)
-  // alert("the average of three numbers is " +medianNum)
+  var medianNum = [a,b,c]
+  medianNum.sort()
+  alert("the median of three numbers is " +medianNum[1])
+  // Wanted to make it more dynamic, but couldn't get it to work right.
+  //  Any suggestions?
+  // medianLen = medianNum.length
+  // medianPos = medianLen / 2
+  // alert("the median of three numbers is " +medianNum[medianPos])
+  
 }
 // range (max-min)
+function myRange(){
+  a = parseInt(document.getElementById("n1").value)
+  b = parseInt(document.getElementById("n2").value)
+  c = parseInt(document.getElementById("n3").value)
+  var rangeNum = [a,b,c]
+  rangeNum.sort()
+  range = rangeNum[2] - rangeNum[0]
+  alert("the range of three numbers is " +range)
+}
