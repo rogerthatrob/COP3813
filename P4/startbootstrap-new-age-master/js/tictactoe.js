@@ -64,7 +64,7 @@ $(function () {
      * then checks for a win or cats game.  Also changes the
      * current player.
      */
-    set = function () {
+    set = function () {5
         
         if ($(this).html() !== EMPTY) {
             return;
